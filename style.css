@@ -6,10 +6,33 @@
 
 h1 {
     text-align: center;
+    color: white;
 }
 
-#nav {
-    width: 100px;
-    height: 100px;
-    background-color: red;
+#header{
+    background-color: #f20000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    
+}
+
+li:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+a{
+    font-size: 700;
+    color: #eceff1;
+    text-decoration: none;    
 }
