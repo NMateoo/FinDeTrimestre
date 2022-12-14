@@ -34,7 +34,7 @@ ul {
 li {
     margin: 1em;
     padding: 1em;
-    transition: all .2s ease-in-out;
+    transition: all .1s ease-in-out;
 }
 
 a {
@@ -49,6 +49,10 @@ li:hover {
     border-radius: .5em;
     text-decoration: underline;
     transform: scale(1.05);
+}
+
+li:active {
+    background-color: rgba(255, 230, 0, 0.822);
 }
 
 main {
@@ -72,12 +76,16 @@ p {
 
 img {
     width: 30%;
-    padding: 1em;
+    margin: 1em;
     transition: all .3s ease-in-out;
 }
 
 img:hover {
     transform: scale(1.1);
+}
+
+img:active {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.685);
 }
 
 article {
@@ -92,4 +100,35 @@ section {
     display: flex;
     align-items: center;
     padding: 1em;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(255, 8, 0);
+    font-size: 1.2em;
+    padding: .5em;
+    border-top: .2em solid black;
+}
+
+footer > p:nth-child(2) {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+#sobreNosotros article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#footerSobreNosotros {
+    border-top: .2em solid black;
+    position: absolute;
+    bottom: 0;
 }
