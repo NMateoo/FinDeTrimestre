@@ -5,44 +5,50 @@
 }
 
 body {
+    background-image: url(/images/patron-perro-costuras-huellas-patas-textura-patas-gato-patron-huellas-perros-textura-perro-ilustracion-vectorial-dibujada-mano-estilo-garabato-sobre-fondo-blanco_192280-1321.webp);
     overflow-x: hidden;
 }
 
 header {
     width: 100vw;
+    border-bottom: .2em solid black
 }
 
 h1 {
     text-align: center;
-    background-color: black;
+    background-color: rgb(255, 8, 0);
     color: white;
     padding: 1em;
 }
 
-nav ul {
+ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: grey;
+    background-color: rgb(255, 8, 0);
     width: 100vw;
     list-style: none;
     text-align: center;
 }
 
-nav li {
+li {
     margin: 1em;
     padding: 1em;
+    transition: all .2s ease-in-out;
 }
 
-nav a {
+a {
     text-decoration: none;
     color: white;
     padding: .4em;
     width: 30vw;
 }
 
-nav li:hover {
-    background-color: black;
+li:hover {
+    background-color: rgba(0, 0, 0, 0.61);
+    border-radius: .5em;
+    text-decoration: underline;
+    transform: scale(1.05);
 }
 
 main {
@@ -52,15 +58,34 @@ main {
     flex-direction: column;
 }
 
+h2 {
+    font-size: 1.7em;
+    font-weight: bold;
+    color: rgb(255, 8, 0);
+    text-decoration: underline;
+    text-shadow: 2px 1px gold;
+}
+
+p {
+    font-weight: bold;
+}
+
 img {
     width: 30%;
     padding: 1em;
+    transition: all .3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
 }
 
 article {
     display: flex;
     width: 70vw;
     margin: 1em;
+    backdrop-filter: blur(10px);
+    border: .5em double black;
 }
 
 section {
