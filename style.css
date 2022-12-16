@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(/images/patron-perro-costuras-huellas-patas-textura-patas-gato-patron-huellas-perros-textura-perro-ilustracion-vectorial-dibujada-mano-estilo-garabato-sobre-fondo-blanco_192280-1321.webp);
+    background-image: url(./images/patron-perro-costuras-huellas-patas-textura-patas-gato-patron-huellas-perros-textura-perro-ilustracion-vectorial-dibujada-mano-estilo-garabato-sobre-fondo-blanco_192280-1321.webp);
     overflow-x: hidden;
 }
 
@@ -131,4 +131,35 @@ footer > p:nth-child(2) {
     border-top: .2em solid black;
     position: absolute;
     bottom: 0;
+}
+
+.portaFoto {
+    width: 50vw;
+    height: 50vh;
+    background-color: lightpink;
+    display: block;
+}
+
+.fotoBurro {
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+}
+
+.fotoBurro:hover {
+    transform: none;
+}
+
+@media screen and (orientation:landscape) {
+    .portaFoto {
+        max-width: 1920px;
+        max-height: 1280px;
+    }
+}
+
+@media screen and (orientation:portrait) {
+    .portaFoto {
+        max-width: 800px;
+        max-height: 1200px;
+    }
 }
